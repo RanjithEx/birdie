@@ -1,6 +1,8 @@
 # Birdie
 Birdie is a small game based out of HTML and JavaScript where the player controls a bird flying through obstacles to achieve a high score. The game is simple, addictive, and easy to play.
 
+The sole purpose of this game is to illustrate HTML DOM manipulations. 
+
 ## How to Play
 - Open the game in your browser
 - Press the Spacebar key or click on the screen to make the bird fly
