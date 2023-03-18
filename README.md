@@ -3,6 +3,8 @@ Birdie is a small game based out of HTML and JavaScript where the player control
 
 The sole purpose of this game is to illustrate HTML DOM manipulations. 
 
+Live demo here: https://ranjithraghunathan.com/birdie/
+
 ![Birdie - Google Chrome 19-03-2023 00_31_40](https://user-images.githubusercontent.com/123010711/226130794-5dc8df89-d421-4053-b659-a75b3eb5790e.png)
 
 
