@@ -1,0 +1,97 @@
+<!-- 
+Game Name: Birdie
+Author: Ranjith V Raghunathan
+Description: This is a demo game written to illustrate the use of Html DOM Web-APIs.
+License: This game is licensed under the MIT License. For more information, please visit https://opensource.org/licenses/MIT
+Follow on Twitter [@RanjithEx] for more updates and games!
+-->
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, initial-scale=1.0" >
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.5, user-scalable=0, orientation=landscape"> -->
+
+    <title>Birdie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <div id="error-message">
+
+        <img src="images/troll-face.png" style="width:100px; height:100px"/><br>
+
+        <p style="margin-top: 20px;;">
+            Hey there, it looks like you're trying to play this game on a mobile device. Unfortunately, the game is not a big fan of tiny screens and chubby fingers. Please try it on a bigger device with slimmer fingers
+
+            <br>
+            <br>
+            We hope you'll be able to enjoy it on a desktop or laptop computer soon!"
+        </p>
+
+    </div>
+
+    <div id="game-area">
+
+        <!-- Debug Rectangle. Good for troubleshooting shape boundaries. -->
+        <div id="debug-rect" style="left:0; top:0;">
+            
+        </div>
+
+        <div id="stat-box">
+
+        </div>
+
+        <!-- Score card -->
+        <div id="score-card">
+            <div style="display: inherit; padding-top:7px">
+                <div style="display: inline-flex" class="sf-caption">Distance <div id="dist-value" class="value-box"></div></div>
+                <div style="display: inline-flex;" class="sf-caption">Coins <div id="coin-count" class="value-box"></div></div>
+                <!--<div style="display: inline-flex;" class="sf-caption">Lives <div id="rem-lives" class="value-box"></div></div> -->
+            </div>
+        </div>
+
+        <!-- The Game Over dialog box -->
+        <div id="game-over">
+            <span style="font-size: 72px; margin:auto" class="game-text">Game Over!</span><br>
+            <span style="font-size: 32px; margin:auto" class="game-text">Press ESC to restart</span>            
+        </div>
+
+        <div id="game-start">
+            
+            <span style="font-size: 32px; margin:auto" class="game-text">Ready!</span><br>
+            <span style="font-size: 62px; margin:auto" class="game-text">Press SPACE to start!</span><br>
+                    
+        </div>
+
+        <!-- This is the birdie sprite -->
+        <img src="images/twitter.png" id="birdie" style="left: 0; top: 0;"/>
+
+        <!-- This is the background layers. There are two layers continous infinite scrolling. -->
+        <div id="layer-container">
+            <div id="layer0" style="left: 0; top:0; width: 3920;">
+            </div>
+            <div id="layer1" style="left:2000; top:0; width:3920;">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+    <script src="scripts/logic.js"></script>        
+
+</html>
+
+
+
+
