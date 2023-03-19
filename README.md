@@ -7,6 +7,7 @@ Live demo here: https://ranjithraghunathan.com/birdie/
 
 ![Birdie - Google Chrome 19-03-2023 00_31_40](https://user-images.githubusercontent.com/123010711/226130794-5dc8df89-d421-4053-b659-a75b3eb5790e.png)
 
+![Birdie - Google Chrome 19-03-2023 10_00_08](https://user-images.githubusercontent.com/123010711/226153766-07e9577b-ce8b-4387-a051-e8f09a8c1bf5.png)
 
 
 ## How to Play
@@ -22,6 +23,11 @@ Live demo here: https://ranjithraghunathan.com/birdie/
 
 ## Notes
 This game was inspired by Flappy Bird, a popular game that was released in 2013. 
+
+## Limitations
+- The game may run at different speeds in different browsers. This is because the time parameter is not being considered for updating the game elements.
+- Scaling issues prevent it from running on mobile devices. So disabled it for the time being.
+- Performance: The game does not make use of high performance WebGL interfaces, instead it uses the default rendering only.
 
 ## License
 This project is licensed under the MIT License.
