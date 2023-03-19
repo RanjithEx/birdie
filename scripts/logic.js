@@ -28,7 +28,9 @@ Follow on Twitter [@RanjithEx] for more updates and games!
     let layerCoins = null;
 
     // Floor level 
-    const floorHeight = screen.height * 0.70;
+    const floorHeight = window.innerHeight * 0.70;
+
+    console.log("Floor height is: " + floorHeight);
 
     // start x offset
     const birdieXOffset = 400;
@@ -65,7 +67,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
     // Prepare the layers with initial content.
     // Initialize layer 0 elements.
     resetLayer(layer0);
-    generatePipes(layer0, [0.2, 0.2, 0.7, 0.8, 1.0]);
+    generatePipes(layer0, [0.0, 0.0, 0.7, 0.8, 1.0]);
     generateGrass(layer0);
     generateClouds(layer0);
 
@@ -89,7 +91,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
         // The game area is fixed 1920x1080 pixels.
         // 
         let gameArea = document.getElementById("game-area")
-        let scale = (screen.width-500) / 1920.00;            
+        let scale = (window.innerWidth-500) / 1920.00;            
 
         /*
         updateScoreCard();

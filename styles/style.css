@@ -15,7 +15,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
     }
 
     /* mobiles */
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1025px) {
 
         #game-area {
             display:none;
@@ -45,6 +45,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
             height: 100%;
             border-radius: 10px;
             overflow: hidden;
+            user-select: none;
             /*transform-origin: 50% 50%; */
             /*transform: scale(var(--screen-scale)); */            
         }
@@ -60,7 +61,6 @@ Follow on Twitter [@RanjithEx] for more updates and games!
         }
 
     }
-
     
     #birdie {
         width: 80px;
@@ -74,6 +74,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
         animation-duration: 1s ;
         animation-fill-mode: forwards;
         animation-iteration-count: var(--anim-iterations);
+        user-select: none;
     }
 
     #layer-container {
@@ -84,12 +85,14 @@ Follow on Twitter [@RanjithEx] for more updates and games!
         left: 0;
         display: inline-flex;
         z-index: -10;
+        user-select: none;
         
     }
     #layer0 {
         width: 200%; 
         height: 100%;        
         background: var(--sky-grad-start);
+        user-select: none;
         background: radial-gradient(circle, var(--sky-grad-start) 0%, var(--sky-grad-end) 100%); ;
         /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  */
         position: absolute; 
@@ -99,6 +102,7 @@ Follow on Twitter [@RanjithEx] for more updates and games!
         width: 200%; 
         height: 100%;
         position: absolute;            
+        user-select: none;
         background: var(--sky-grad-start);
         background: radial-gradient(circle, var(--sky-grad-start) 0%, var(--sky-grad-end) 100%); ;
         /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
